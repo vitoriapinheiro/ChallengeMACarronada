@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9348357E2A1E360A00FEA301 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348357D2A1E360A00FEA301 /* TimerView.swift */; };
+		934835802A1E3A2300FEA301 /* PauseTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348357F2A1E3A2300FEA301 /* PauseTimer.swift */; };
 		938B39FE2A1CFCF300DFB00B /* listApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938B39FD2A1CFCF300DFB00B /* listApp.swift */; };
 		938B3A002A1CFCF300DFB00B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938B39FF2A1CFCF300DFB00B /* ContentView.swift */; };
 		938B3A022A1CFCF400DFB00B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938B3A012A1CFCF400DFB00B /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9348357D2A1E360A00FEA301 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		9348357F2A1E3A2300FEA301 /* PauseTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseTimer.swift; sourceTree = "<group>"; };
 		938B39FA2A1CFCF300DFB00B /* list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = list.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		938B39FD2A1CFCF300DFB00B /* listApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listApp.swift; sourceTree = "<group>"; };
 		938B39FF2A1CFCF300DFB00B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,9 +58,11 @@
 			children = (
 				938B39FD2A1CFCF300DFB00B /* listApp.swift */,
 				938B39FF2A1CFCF300DFB00B /* ContentView.swift */,
+				9348357D2A1E360A00FEA301 /* TimerView.swift */,
 				938B3A012A1CFCF400DFB00B /* Assets.xcassets */,
 				938B3A062A1CFCF400DFB00B /* list.entitlements */,
 				938B3A032A1CFCF400DFB00B /* Preview Content */,
+				9348357F2A1E3A2300FEA301 /* PauseTimer.swift */,
 			);
 			path = list;
 			sourceTree = "<group>";
@@ -139,7 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9348357E2A1E360A00FEA301 /* TimerView.swift in Sources */,
 				938B3A002A1CFCF300DFB00B /* ContentView.swift in Sources */,
+				934835802A1E3A2300FEA301 /* PauseTimer.swift in Sources */,
 				938B39FE2A1CFCF300DFB00B /* listApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
