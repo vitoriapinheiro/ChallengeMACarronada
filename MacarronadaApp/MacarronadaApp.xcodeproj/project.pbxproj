@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CA7CCAD2A1D040700F9629C /* MacarronadaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7CCAC2A1D040700F9629C /* MacarronadaAppApp.swift */; };
+		6CA7CCAF2A1D040700F9629C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7CCAE2A1D040700F9629C /* ContentView.swift */; };
+		6CA7CCB12A1D040700F9629C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CA7CCB02A1D040700F9629C /* Assets.xcassets */; };
+		6CA7CCB42A1D040700F9629C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CA7CCB32A1D040700F9629C /* Preview Assets.xcassets */; };
+		6CA7CCBF2A1D040800F9629C /* MacarronadaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7CCBE2A1D040800F9629C /* MacarronadaAppTests.swift */; };
+		6CA7CCC92A1D040800F9629C /* MacarronadaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7CCC82A1D040800F9629C /* MacarronadaAppUITests.swift */; };
+		6CA7CCCB2A1D040800F9629C /* MacarronadaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7CCCA2A1D040800F9629C /* MacarronadaAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CA7CCBB2A1D040800F9629C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CA7CCA12A1D040700F9629C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CA7CCA82A1D040700F9629C;
+			remoteInfo = MacarronadaApp;
+		};
+		6CA7CCC52A1D040800F9629C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CA7CCA12A1D040700F9629C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CA7CCA82A1D040700F9629C;
+			remoteInfo = MacarronadaApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6CA7CCA92A1D040700F9629C /* MacarronadaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacarronadaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA7CCAC2A1D040700F9629C /* MacarronadaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacarronadaAppApp.swift; sourceTree = "<group>"; };
+		6CA7CCAE2A1D040700F9629C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6CA7CCB02A1D040700F9629C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CA7CCB32A1D040700F9629C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6CA7CCB52A1D040700F9629C /* MacarronadaApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacarronadaApp.entitlements; sourceTree = "<group>"; };
+		6CA7CCBA2A1D040800F9629C /* MacarronadaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacarronadaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA7CCBE2A1D040800F9629C /* MacarronadaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacarronadaAppTests.swift; sourceTree = "<group>"; };
+		6CA7CCC42A1D040800F9629C /* MacarronadaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacarronadaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA7CCC82A1D040800F9629C /* MacarronadaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacarronadaAppUITests.swift; sourceTree = "<group>"; };
+		6CA7CCCA2A1D040800F9629C /* MacarronadaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacarronadaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CA7CCA62A1D040700F9629C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA7CCB72A1D040800F9629C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA7CCC12A1D040800F9629C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CA7CCA02A1D040700F9629C = {
+			isa = PBXGroup;
+			children = (
+				6CA7CCAB2A1D040700F9629C /* MacarronadaApp */,
+				6CA7CCBD2A1D040800F9629C /* MacarronadaAppTests */,
+				6CA7CCC72A1D040800F9629C /* MacarronadaAppUITests */,
+				6CA7CCAA2A1D040700F9629C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6CA7CCAA2A1D040700F9629C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CA7CCA92A1D040700F9629C /* MacarronadaApp.app */,
+				6CA7CCBA2A1D040800F9629C /* MacarronadaAppTests.xctest */,
+				6CA7CCC42A1D040800F9629C /* MacarronadaAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CA7CCAB2A1D040700F9629C /* MacarronadaApp */ = {
+			isa = PBXGroup;
+			children = (
+				6CA7CCAC2A1D040700F9629C /* MacarronadaAppApp.swift */,
+				6CA7CCAE2A1D040700F9629C /* ContentView.swift */,
+				6CA7CCB02A1D040700F9629C /* Assets.xcassets */,
+				6CA7CCB52A1D040700F9629C /* MacarronadaApp.entitlements */,
+				6CA7CCB22A1D040700F9629C /* Preview Content */,
+			);
+			path = MacarronadaApp;
+			sourceTree = "<group>";
+		};
+		6CA7CCB22A1D040700F9629C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6CA7CCB32A1D040700F9629C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6CA7CCBD2A1D040800F9629C /* MacarronadaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6CA7CCBE2A1D040800F9629C /* MacarronadaAppTests.swift */,
+			);
+			path = MacarronadaAppTests;
+			sourceTree = "<group>";
+		};
+		6CA7CCC72A1D040800F9629C /* MacarronadaAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6CA7CCC82A1D040800F9629C /* MacarronadaAppUITests.swift */,
+				6CA7CCCA2A1D040800F9629C /* MacarronadaAppUITestsLaunchTests.swift */,
+			);
+			path = MacarronadaAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CA7CCA82A1D040700F9629C /* MacarronadaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CA7CCCE2A1D040800F9629C /* Build configuration list for PBXNativeTarget "MacarronadaApp" */;
+			buildPhases = (
+				6CA7CCA52A1D040700F9629C /* Sources */,
+				6CA7CCA62A1D040700F9629C /* Frameworks */,
+				6CA7CCA72A1D040700F9629C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacarronadaApp;
+			productName = MacarronadaApp;
+			productReference = 6CA7CCA92A1D040700F9629C /* MacarronadaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CA7CCB92A1D040800F9629C /* MacarronadaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CA7CCD12A1D040800F9629C /* Build configuration list for PBXNativeTarget "MacarronadaAppTests" */;
+			buildPhases = (
+				6CA7CCB62A1D040800F9629C /* Sources */,
+				6CA7CCB72A1D040800F9629C /* Frameworks */,
+				6CA7CCB82A1D040800F9629C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CA7CCBC2A1D040800F9629C /* PBXTargetDependency */,
+			);
+			name = MacarronadaAppTests;
+			productName = MacarronadaAppTests;
+			productReference = 6CA7CCBA2A1D040800F9629C /* MacarronadaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6CA7CCC32A1D040800F9629C /* MacarronadaAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CA7CCD42A1D040800F9629C /* Build configuration list for PBXNativeTarget "MacarronadaAppUITests" */;
+			buildPhases = (
+				6CA7CCC02A1D040800F9629C /* Sources */,
+				6CA7CCC12A1D040800F9629C /* Frameworks */,
+				6CA7CCC22A1D040800F9629C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CA7CCC62A1D040800F9629C /* PBXTargetDependency */,
+			);
+			name = MacarronadaAppUITests;
+			productName = MacarronadaAppUITests;
+			productReference = 6CA7CCC42A1D040800F9629C /* MacarronadaAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CA7CCA12A1D040700F9629C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6CA7CCA82A1D040700F9629C = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					6CA7CCB92A1D040800F9629C = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 6CA7CCA82A1D040700F9629C;
+					};
+					6CA7CCC32A1D040800F9629C = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 6CA7CCA82A1D040700F9629C;
+					};
+				};
+			};
+			buildConfigurationList = 6CA7CCA42A1D040700F9629C /* Build configuration list for PBXProject "MacarronadaApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CA7CCA02A1D040700F9629C;
+			productRefGroup = 6CA7CCAA2A1D040700F9629C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CA7CCA82A1D040700F9629C /* MacarronadaApp */,
+				6CA7CCB92A1D040800F9629C /* MacarronadaAppTests */,
+				6CA7CCC32A1D040800F9629C /* MacarronadaAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CA7CCA72A1D040700F9629C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA7CCB42A1D040700F9629C /* Preview Assets.xcassets in Resources */,
+				6CA7CCB12A1D040700F9629C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA7CCB82A1D040800F9629C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA7CCC22A1D040800F9629C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CA7CCA52A1D040700F9629C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA7CCAF2A1D040700F9629C /* ContentView.swift in Sources */,
+				6CA7CCAD2A1D040700F9629C /* MacarronadaAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA7CCB62A1D040800F9629C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA7CCBF2A1D040800F9629C /* MacarronadaAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA7CCC02A1D040800F9629C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA7CCCB2A1D040800F9629C /* MacarronadaAppUITestsLaunchTests.swift in Sources */,
+				6CA7CCC92A1D040800F9629C /* MacarronadaAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CA7CCBC2A1D040800F9629C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CA7CCA82A1D040700F9629C /* MacarronadaApp */;
+			targetProxy = 6CA7CCBB2A1D040800F9629C /* PBXContainerItemProxy */;
+		};
+		6CA7CCC62A1D040800F9629C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CA7CCA82A1D040700F9629C /* MacarronadaApp */;
+			targetProxy = 6CA7CCC52A1D040800F9629C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6CA7CCCC2A1D040800F9629C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6CA7CCCD2A1D040800F9629C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		6CA7CCCF2A1D040800F9629C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacarronadaApp/MacarronadaApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacarronadaApp/Preview Content\"";
+				DEVELOPMENT_TEAM = C5CA8XQ4HG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.MacarronadaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6CA7CCD02A1D040800F9629C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacarronadaApp/MacarronadaApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacarronadaApp/Preview Content\"";
+				DEVELOPMENT_TEAM = C5CA8XQ4HG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.MacarronadaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6CA7CCD22A1D040800F9629C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5CA8XQ4HG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.MacarronadaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacarronadaApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MacarronadaApp";
+			};
+			name = Debug;
+		};
+		6CA7CCD32A1D040800F9629C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5CA8XQ4HG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.MacarronadaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacarronadaApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MacarronadaApp";
+			};
+			name = Release;
+		};
+		6CA7CCD52A1D040800F9629C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5CA8XQ4HG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.MacarronadaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MacarronadaApp;
+			};
+			name = Debug;
+		};
+		6CA7CCD62A1D040800F9629C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5CA8XQ4HG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.MacarronadaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MacarronadaApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CA7CCA42A1D040700F9629C /* Build configuration list for PBXProject "MacarronadaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA7CCCC2A1D040800F9629C /* Debug */,
+				6CA7CCCD2A1D040800F9629C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CA7CCCE2A1D040800F9629C /* Build configuration list for PBXNativeTarget "MacarronadaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA7CCCF2A1D040800F9629C /* Debug */,
+				6CA7CCD02A1D040800F9629C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CA7CCD12A1D040800F9629C /* Build configuration list for PBXNativeTarget "MacarronadaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA7CCD22A1D040800F9629C /* Debug */,
+				6CA7CCD32A1D040800F9629C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CA7CCD42A1D040800F9629C /* Build configuration list for PBXNativeTarget "MacarronadaAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA7CCD52A1D040800F9629C /* Debug */,
+				6CA7CCD62A1D040800F9629C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CA7CCA12A1D040700F9629C /* Project object */;
+}
