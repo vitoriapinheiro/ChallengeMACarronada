@@ -10,37 +10,44 @@ struct TempoView: View {
     @State private var timer: Timer?
     
     var body: some View {
-        
-        VStack(alignment: .leading) {
-            
-            Text(timeString(from: timeRemaining))
-                .font(.largeTitle)
-                .foregroundColor(.black)
-            
-            // .frame(width: 50, height: 50)
-            
-            HStack {
-                ProgressView(value: Double(timeRemaining), total: 600)
-                    .accentColor(.black)
-                    .padding(.horizontal)
-                    .frame(width: 326)
-            }
-            
-        }
-        HStack {
-            Button(action: {
-                if isTimerRunning {
-                    pauseTimer()
-                } else {
-                    startTimer()
+        HStack{
+            ZStack{
+                Rectangle().foregroundColor(.red)
+                VStack(alignment: .leading) {
+                    ZStack{
+                        Rectangle()
+                        Text(timeString(from: timeRemaining))
+                            .font(.largeTitle)
+                            .foregroundColor(.black)
+                    }
+                    
+                    // .frame(width: 50, height: 50)
+                    
+                    HStack {
+                        ProgressView(value: Double(timeRemaining), total: 600)
+                            .accentColor(.black)
+                            .padding(.horizontal)
+                        //                        .frame(width: 326)
+                    }
                 }
-            }) {
-                Image(systemName: isTimerRunning ? "pause.fill" : "play.fill")
-                    .font(.title)
+                
             }
-            .buttonStyle(BorderlessButtonStyle())
-            .frame(width: 43, height: 88)
-            .background(Color.orange)
+            .cornerRadius(8)
+            HStack {
+                Button(action: {
+                    if isTimerRunning {
+                        pauseTimer()
+                    } else {
+                        startTimer()
+                    }
+                }) {
+                    Image(systemName: isTimerRunning ? "pause.fill" : "play.fill")
+                        .font(.title)
+                }
+                .buttonStyle(BorderlessButtonStyle())
+                .frame(width: 43, height: 88)
+                .background(Color.orange)
+            }
         }
         
         
