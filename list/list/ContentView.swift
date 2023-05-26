@@ -28,7 +28,6 @@ struct ContentView: View {
                 HStack {
                     List(inputList, id: \.self) { input in
                         HStack {
-                            
                             Text(input)
                                 .foregroundColor(.black)
                                 .font(.headline)
@@ -39,11 +38,9 @@ struct ContentView: View {
                         }
                         .listRowBackground(Color.cyan) // Altere a cor de fundo da célula
                         .frame(height: 87)
-                        // .padding(.vertical, 5)
-                        // .padding(.horizontal, 10)
-                        // .cornerRadius(8)
+                        
                     }
-                   // .frame(width: 375, height: 88)
+                    
                 }
                 .background(Color.white)
                 

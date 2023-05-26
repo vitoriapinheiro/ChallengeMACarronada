@@ -19,9 +19,8 @@ struct TempoView: View {
                         Text(timeString(from: timeRemaining))
                             .font(.largeTitle)
                             .foregroundColor(.black)
+                        
                     }
-                    
-                    // .frame(width: 50, height: 50)
                     
                     HStack {
                         ProgressView(value: Double(timeRemaining), total: 600)
