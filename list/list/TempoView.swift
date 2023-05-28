@@ -5,10 +5,15 @@
 import SwiftUI
 
 struct TempoView: View {
+    let timeOptions = [1, 10, 15] // Opções de tempo em minutos
+    
     @State private var timeRemaining = 600 // 10 minutos em segundos
     @State private var isTimerRunning = false
     @State private var timer: Timer?
     @State private var showTimeOptions = false
+    @State private var selectedTime = 0
+    @State private var finished = false;
+    
     
     var timeText = ""
     
@@ -16,8 +21,7 @@ struct TempoView: View {
         self.timeText = timeText
     }
     
-    let timeOptions = [5, 10, 15] // Opções de tempo em minutos
-    @State private var selectedTime = 0
+    
     
     var body: some View {
         HStack {
@@ -30,7 +34,6 @@ struct TempoView: View {
                             Text(timeText)
                                 .foregroundColor(.black)
                                 .font(.headline)
-                                .padding(10)
                                 .cornerRadius(8)
                             Spacer()
                             Button(action: {
@@ -46,7 +49,7 @@ struct TempoView: View {
                                     .background(Color.black)
                                     .padding()
                             }
-                        }
+                        }.padding(16)
                         
                     }
                     
@@ -59,7 +62,11 @@ struct TempoView: View {
             }
             .cornerRadius(8)
             
-           
+            
+            HStack {
+                if (finished) {
+                    Image(systemName: "pause.fill")
+                }
                 Button(action: {
                     if isTimerRunning {
                         pauseTimer()
@@ -73,11 +80,12 @@ struct TempoView: View {
                 .buttonStyle(BorderlessButtonStyle())
                 .frame(width: 43, height: 88)
                 .background(Color.orange)
+            }
             
         }.padding(24)
-        .onAppear {
-            startTimer()
-        }
+            .onAppear {
+                startTimer()
+            }
     }
     
     var menuContent: some View {
@@ -86,6 +94,7 @@ struct TempoView: View {
                 Button(action: {
                     setTimer(minutes: option)
                     selectedTime = option
+                    finished = false
                     showTimeOptions = false
                 }) {
                     Text("\(option) minutos")
@@ -103,6 +112,8 @@ struct TempoView: View {
                 } else {
                     timer?.invalidate()
                     timer = nil
+                    
+                    finished = true
                 }
             }
             isTimerRunning = true
@@ -123,7 +134,7 @@ struct TempoView: View {
     func getTotalTime() -> Int {
         return selectedTime * 60;
     }
-
+    
     
     func timeString(from seconds: Int) -> String {
         let minutes = seconds / 60

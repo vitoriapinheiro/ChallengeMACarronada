@@ -28,7 +28,6 @@ struct ContentView: View {
                 HStack {
                     List(inputList, id: \.self) { input in
                         HStack {
-                           
                             
                             TempoView(timeText: input)
                         }
