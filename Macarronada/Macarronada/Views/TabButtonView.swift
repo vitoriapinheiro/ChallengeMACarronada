@@ -12,10 +12,13 @@ struct TabButtonView: View {
         var image: String
         var title: String
         @Binding var currentTab: String
+        var action: () -> Void // Closure para ser executado ao clicar no botão
         
         var body: some View{
             
-            Button(action: {}, label: {
+            Button(action: {
+                action() // Executa o closure ao clicar no botão
+            }, label: {
                 
                 VStack{
                     
@@ -56,5 +59,4 @@ struct TabButtonView: View {
             )
         }
     }
-
 
