@@ -30,15 +30,20 @@ struct TempoView: View {
     
     var body: some View {
     
-        VStack {
-            Text("oii")
-                .frame(width: 30, height: 10)
-                .background(.blue)
+        VStack(alignment: .leading) {
+            
+            HStack {
+                Text("oii")
+                    .frame(width: 30, height: 10)
+//                    .background(.blue)
+                Image(systemName: "clock")
         
+            }.frame(width: 20, height: 20)
+                .background(Color.blue)
+            
+         
         HStack {
-            
-//            Text("TUDI")
-            
+           
             ZStack {
                 Rectangle().foregroundColor(.red)
                 VStack(alignment: .leading) {
@@ -63,7 +68,7 @@ struct TempoView: View {
                                     .background(Color.black)
                                     .padding()
                             }
-                        }.padding(16)
+                        }.padding(4)
                         
                     }
                     
@@ -76,6 +81,11 @@ struct TempoView: View {
             }
             .cornerRadius(8)
             
+            
+            
+            
+            // criar funcao para que quando acabe o tempo ele assuma uma nova roupagem que nao e o start bosst
+            //quando clicar em concluir ele vai assumir essa nova funao e se tornar cronometro
             
             HStack {
                 if (finished) {
