@@ -10,9 +10,24 @@ import CoreData
 
 struct ContentView: View {
     @Environment (\.managedObjectContext) private var viewContext
+    @State var currentTab = "My tasks"
+    
     var body: some View {
-        Text("Welcome to MenuBarLinks")
-            .padding(64)
+//        Text("Welcome to MenuBarLinks")
+//            .padding(64)
+//        
+        VStack{
+            HStack{
+                TabButtonView(image: "checklist", title: "My tasks", currentTab: $currentTab)
+                
+                TabButtonView(image: "clock.fill", title: "History", currentTab: $currentTab)
+            }
+            .padding(.horizontal)
+            .padding(.top)
+            
+            Spacer(minLength: 0)
+        }
+        .frame(width: 425, height: 56)
     }
     
 //    @FetchRequest(
