@@ -73,6 +73,9 @@ struct TempoView: View {
             
             
             HStack {
+                
+                
+                //aqui o botao é chamado
                 if (finished) {
                     Image(systemName: "pause.fill")
                 }
@@ -121,6 +124,8 @@ struct TempoView: View {
                 } else {
                     timer?.invalidate()
                     timer = nil
+                    
+                    // aqui ele aparece
                     
                     finished = true
                 }
