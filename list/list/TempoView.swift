@@ -24,7 +24,16 @@ struct TempoView: View {
     
     
     var body: some View {
+    
+        VStack {
+            Text("oii")
+                .frame(width: 320, height: 30)
+                .background(.blue)
+        
         HStack {
+            
+//            Text("TUDI")
+            
             ZStack {
                 Rectangle().foregroundColor(.red)
                 VStack(alignment: .leading) {
@@ -81,7 +90,7 @@ struct TempoView: View {
                 .frame(width: 43, height: 88)
                 .background(Color.orange)
             }
-            
+        }
         }.padding(24)
             .onAppear {
                 startTimer()

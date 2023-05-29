@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		934835822A1E480500FEA301 /* TempoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934835812A1E480500FEA301 /* TempoView.swift */; };
+		9369A7192A24E16D00E86F2A /* testeeee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9369A7182A24E16D00E86F2A /* testeeee.swift */; };
 		938B39FE2A1CFCF300DFB00B /* listApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938B39FD2A1CFCF300DFB00B /* listApp.swift */; };
 		938B3A002A1CFCF300DFB00B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938B39FF2A1CFCF300DFB00B /* ContentView.swift */; };
 		938B3A022A1CFCF400DFB00B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938B3A012A1CFCF400DFB00B /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		934835812A1E480500FEA301 /* TempoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoView.swift; sourceTree = "<group>"; };
+		9369A7182A24E16D00E86F2A /* testeeee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testeeee.swift; sourceTree = "<group>"; };
 		938B39FA2A1CFCF300DFB00B /* list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = list.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		938B39FD2A1CFCF300DFB00B /* listApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listApp.swift; sourceTree = "<group>"; };
 		938B39FF2A1CFCF300DFB00B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				938B3A012A1CFCF400DFB00B /* Assets.xcassets */,
 				938B3A062A1CFCF400DFB00B /* list.entitlements */,
 				938B3A032A1CFCF400DFB00B /* Preview Content */,
+				9369A7182A24E16D00E86F2A /* testeeee.swift */,
 			);
 			path = list;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				934835822A1E480500FEA301 /* TempoView.swift in Sources */,
+				9369A7192A24E16D00E86F2A /* testeeee.swift in Sources */,
 				938B3A002A1CFCF300DFB00B /* ContentView.swift in Sources */,
 				938B39FE2A1CFCF300DFB00B /* listApp.swift in Sources */,
 			);
