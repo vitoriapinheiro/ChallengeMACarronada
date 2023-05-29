@@ -16,57 +16,113 @@ struct PopoverView: View {
     @State private var taskTitle: String = ""
     @State private var taskTime: Int = 0
     
-    @State private var textInput: String = ""
-    @State private var inputList: [String] = []
-    @State private var isTimerViewVisible = false
     
-    var body: some View {
-        VStack {
-            
+    
+    @State private var textInput: String = ""
+        @State private var inputList: [String] = []
+        @State private var isTimerViewVisible = false
+        
+        var body: some View {
             VStack {
-                TextField("Digite aqui", text: $textInput)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                    .onSubmit {
-                        addItemToList()
-                    }
-            }
-            
-            VStack(spacing: 50) {
-                HStack {
-                    List(inputList, id: \.self) { input in
-                        HStack {
-                            Text(input)
-                                .foregroundColor(.black)
-                                .font(.headline)
-                                .padding(10)
-                                .cornerRadius(8)
-                            
-                            TempoView()
+                
+                VStack {
+                    TextField("Digite aqui", text: $textInput)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .padding()
+                        .onSubmit {
+                            addItemToList()
                         }
-                       // .listRowBackground(Color.cyan) // Altere a cor de fundo da célula
-                        .frame(height: 87)
+                }
+                
+                VStack(spacing: 50) {
+                    HStack {
+                        List(inputList, id: \.self) { input in
+                            HStack {
+                                
+                                TempoView(timeText: input)
+                            }
+                            .listRowBackground(Color.cyan) // Altere a cor de fundo da célula
+                            .frame(height: 87)
+                            
+                        }
                         
                     }
+                    .background(Color.white)
                     
+                    .cornerRadius(8)
+                    
+                    Spacer()
                 }
-                .background(Color.white)
-                
-                .cornerRadius(8)
-                
-                Spacer()
             }
         }
-    }
-    
-    private func addItemToList() {
-        guard !textInput.isEmpty else { return }
-        inputList.append(textInput)
-        textInput = ""
-        isTimerViewVisible = true
         
+        private func addItemToList() {
+            guard !textInput.isEmpty else { return }
+            inputList.append(textInput)
+            textInput = ""
+            isTimerViewVisible = true
+            
+        }
     }
-}
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
+    }
+
+
+//comentada 20/05
+//    @State private var textInput: String = ""
+//    @State private var inputList: [String] = []
+//    @State private var isTimerViewVisible = false
+//
+//    var body: some View {
+//        VStack {
+//
+//            VStack {
+//                TextField("Digite aqui", text: $textInput)
+//                    .textFieldStyle(RoundedBorderTextFieldStyle())
+//                    .padding()
+//                    .onSubmit {
+//                        addItemToList()
+//                    }
+//            }
+//
+//            VStack(spacing: 50) {
+//                HStack {
+//                    List(inputList, id: \.self) { input in
+//                        HStack {
+//                            Text(input)
+//                                .foregroundColor(.black)
+//                                .font(.headline)
+//                                .padding(10)
+//                                .cornerRadius(8)
+//
+//                            TempoView()
+//                        }
+//                       // .listRowBackground(Color.cyan) // Altere a cor de fundo da célula
+//                        .frame(height: 87)
+//
+//                    }
+//
+//                }
+//                .background(Color.white)
+//
+//                .cornerRadius(8)
+//
+//                Spacer()
+//            }
+//        }
+//    }
+//
+//    private func addItemToList() {
+//        guard !textInput.isEmpty else { return }
+//        inputList.append(textInput)
+//        textInput = ""
+//        isTimerViewVisible = true
+//
+//    }
+//}
 
 
 
