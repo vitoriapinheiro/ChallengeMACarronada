@@ -32,7 +32,7 @@ struct TempoView: View {
     
         VStack {
             Text("oii")
-                .frame(width: 320, height: 30)
+                .frame(width: 30, height: 10)
                 .background(.blue)
         
         HStack {
@@ -54,7 +54,7 @@ struct TempoView: View {
                                 showTimeOptions = true
                             }) {
                                 Text(timeString(from: timeRemaining))
-                                    .font(.largeTitle)
+                                    .font(.system(size: 14))
                                     .foregroundColor(.black)
                             }
                             .buttonStyle(BorderlessButtonStyle())
@@ -92,11 +92,11 @@ struct TempoView: View {
                         .font(.title)
                 }
                 .buttonStyle(BorderlessButtonStyle())
-                .frame(width: 43, height: 88)
+                .frame(width: 20, height: 20)
                 .background(Color.orange)
             }
         }
-        }.padding(24)
+        }.padding(10)
             .onAppear {
                 startTimer()
             }
