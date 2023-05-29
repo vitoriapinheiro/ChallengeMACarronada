@@ -15,9 +15,21 @@ struct PopoverView: View {
     
     @State private var taskTitle: String = ""
     @State private var taskTime: Int = 0
+    @State var currentTab = "My tasks"
     
     var body: some View {
         VStack(alignment: .leading){
+            
+            HStack{
+                TabButtonView(image: "checklist", title: "My tasks", currentTab: $currentTab)
+                
+                TabButtonView(image: "clock.fill", title: "History", currentTab: $currentTab)
+            }
+            .padding(.horizontal)
+            .padding(.top)
+            
+            Spacer(minLength: 0)
+            
             TextField("Digite aqui", text: $taskTitle)
             HStack{
                 Button("Cancelar"){
@@ -60,8 +72,3 @@ struct PopoverView: View {
     }
 }
 
-struct PopoverView_Previews: PreviewProvider {
-    static var previews: some View {
-        PopoverView()
-    }
-}
