@@ -15,6 +15,7 @@ struct PopoverView: View {
     
     @State private var taskTitle: String = ""
     @State private var taskTime: Int = 0
+    @State private var taskStatus: String = "notStarted"
     
     var body: some View {
         VStack(alignment: .leading){
@@ -30,6 +31,7 @@ struct PopoverView: View {
                         userTask.id = UUID()
                         userTask.title = taskTitle
                         userTask.time = taskTime
+                        userTask.status = taskStatus
                         
                         try? viewContext.save()
                         
