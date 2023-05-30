@@ -27,6 +27,19 @@ struct ContentView: View {
         .ignoresSafeArea(.all)
     }
     
+//    struct ContentView_Previews: PreviewProvider {
+//        static var previews: some View {
+//            ContentView()
+//        }
+//    }
+//
+//    
+//    
+    
+    
+    
+    
+    
 //    @FetchRequest(
 //        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
 //        animation: .default

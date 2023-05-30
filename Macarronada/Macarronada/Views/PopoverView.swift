@@ -61,8 +61,8 @@ struct PopoverView: View {
     }
 }
 
-struct PopoverView_Previews: PreviewProvider {
-    static var previews: some View {
-        PopoverView()
-    }
-}
+//struct PopoverView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PopoverView()
+//    }
+//}
