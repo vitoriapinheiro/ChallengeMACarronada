@@ -29,83 +29,91 @@ struct TempoView: View {
     
     
     var body: some View {
-    
+        
         VStack(alignment: .leading) {
             
             HStack {
                 Text("oii")
                     .frame(width: 30, height: 10)
-//                    .background(.blue)
-                Image(systemName: "clock")
-        
+                
+                Button(action: {
+                    showTimeOptions  = true
+                    
+                }) {
+                    Image(systemName: "clock")
+                    
+                }
+                .popover(isPresented: $showTimeOptions) {
+                    menuContent
+                        .background(Color.black)
+                        .padding()
+                }
+             
+                
             }.frame(width: 20, height: 20)
                 .background(Color.blue)
             
-         
-        HStack {
-           
-            ZStack {
-                Rectangle().foregroundColor(.red)
-                VStack(alignment: .leading) {
-                    ZStack {
-                        Rectangle()
-                        HStack {
-                            Text(timeText)
-                                .foregroundColor(.black)
-                                .font(.headline)
-                                .cornerRadius(8)
-                            Spacer()
-                            Button(action: {
-                                showTimeOptions = true
-                            }) {
+            HStack {
+                
+                ZStack {
+                    Rectangle().foregroundColor(.red)
+                    VStack(alignment: .leading) {
+                        ZStack {
+                            Rectangle()
+                            HStack {
+                                Text(timeText)
+                                    .foregroundColor(.black)
+                                    .font(.headline)
+                                    .cornerRadius(8)
+                                Spacer()
+                                
                                 Text(timeString(from: timeRemaining))
                                     .font(.system(size: 14))
                                     .foregroundColor(.black)
-                            }
-                            .buttonStyle(BorderlessButtonStyle())
-                            .popover(isPresented: $showTimeOptions) {
-                                menuContent
-                                    .background(Color.black)
-                                    .padding()
-                            }
-                        }.padding(4)
+                                
+                                //.buttonStyle(BorderlessButtonStyle())
+                                
+                            }.padding(4)
+                            
+                        }
                         
+                        HStack {
+                            ProgressView(value: Double(timeRemaining), total: Double(getTotalTime()))
+                                .accentColor(.black)
+                                .padding(.horizontal)
+                        }
+                    }
+                }
+                .cornerRadius(8)
+                
+                // criar funcao para que quando acabe o tempo ele assuma uma nova roupagem que nao e o start bosst
+                //quando clicar em concluir ele vai assumir essa nova funao e se tornar cronometro
+                
+                HStack {
+                    
+                    Button {
+                        print("printou")
+                    } label: {
+                        if (finished) {
+                            Image(systemName: "pause.fill")
+                        }
                     }
                     
-                    HStack {
-                        ProgressView(value: Double(timeRemaining), total: Double(getTotalTime()))
-                            .accentColor(.black)
-                            .padding(.horizontal)
+                    Button(action: {
+                        if isTimerRunning {
+                            pauseTimer()
+                        } else {
+                            startTimer()
+                        }
+                    }) {
+                        Image(systemName: isTimerRunning ? "pause.fill" : "play.fill")
+                            .font(.title)
                     }
+                    .buttonStyle(BorderlessButtonStyle())
+                    .frame(width: 20, height: 20)
+                    .background(Color.orange)
                 }
             }
-            .cornerRadius(8)
-            
-            
-            
-            
-            // criar funcao para que quando acabe o tempo ele assuma uma nova roupagem que nao e o start bosst
-            //quando clicar em concluir ele vai assumir essa nova funao e se tornar cronometro
-            
-            HStack {
-                if (finished) {
-                    Image(systemName: "pause.fill")
-                }
-                Button(action: {
-                    if isTimerRunning {
-                        pauseTimer()
-                    } else {
-                        startTimer()
-                    }
-                }) {
-                    Image(systemName: isTimerRunning ? "pause.fill" : "play.fill")
-                        .font(.title)
-                }
-                .buttonStyle(BorderlessButtonStyle())
-                .frame(width: 20, height: 20)
-                .background(Color.orange)
-            }
-        }
         }.padding(10)
             .onAppear {
                 startTimer()
@@ -116,6 +124,7 @@ struct TempoView: View {
         VStack {
             ForEach(timeOptions, id: \.self) { option in
                 Button(action: {
+                    
                     setTimer(minutes: option)
                     selectedTime = option
                     finished = false
@@ -136,7 +145,6 @@ struct TempoView: View {
                 } else {
                     timer?.invalidate()
                     timer = nil
-                    
                     finished = true
                 }
             }
@@ -174,91 +182,9 @@ struct TempoView_Previews: PreviewProvider {
         TempoView(timeText: "Alo tempo")
     }
 }
-//import SwiftUI
-//
-//struct TempoView: View {
-//    @State private var timeRemaining = 600 // 10 minutos em segundos
-//    @State private var isTimerRunning = false
-//    @State private var timer: Timer?
-//
-//    var body: some View {
-//        HStack{
-//            ZStack{
-//                Rectangle().foregroundColor(.red)
-//                VStack(alignment: .leading) {
-//                    ZStack{
-//                        Rectangle()
-//                        Text(timeString(from: timeRemaining))
-//                            .font(.largeTitle)
-//                            .foregroundColor(.black)
-//
-//                    }
-//
-//                    HStack {
-//                        ProgressView(value: Double(timeRemaining), total: 600)
-//                            .accentColor(.black)
-//                            .padding(.horizontal)
-//                        //                        .frame(width: 326)
-//                    }
-//                }
-//
-//            }
-//            .cornerRadius(8)
-//            HStack {
-//                Button(action: {
-//                    if isTimerRunning {
-//                        pauseTimer()
-//                    } else {
-//                        startTimer()
-//                    }
-//                }) {
-//                    Image(systemName: isTimerRunning ? "pause.fill" : "play.fill")
-//                        .font(.title)
-//                        .foregroundColor(.black)
-//                }
-//                .buttonStyle(BorderlessButtonStyle())
-//                .frame(width: 43, height: 88)
-//                .background(Color.orange)
-//                .cornerRadius(8)
-//            }
-//        }
-//
-//
-//        .onAppear {
-//            startTimer()
-//        }
-//    }
-//
-//    func startTimer() {
-//        if timer == nil {
-//            timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-//                if timeRemaining > 0 {
-//                    timeRemaining -= 1
-//                } else {
-//                    timer?.invalidate()
-//                    timer = nil
-//                }
-//            }
-//            isTimerRunning = true
-//        }
-//    }
-//
-//    func pauseTimer() {
-//        timer?.invalidate()
-//        timer = nil
-//        isTimerRunning = false
-//    }
-//
-//    func timeString(from seconds: Int) -> String {
-//        let minutes = seconds / 60
-//        let seconds = seconds % 60
-//        return String(format: "%02d:%02d", minutes, seconds)
-//    }
-//}
-//
-//
-//struct TempoView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TempoView()
-//    }
-//}
+
+
+
+
+
+
