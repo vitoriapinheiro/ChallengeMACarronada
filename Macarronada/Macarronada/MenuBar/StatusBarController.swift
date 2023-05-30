@@ -6,6 +6,7 @@
 //
 
 import AppKit
+import SwiftUI
 
 class StatusBarController {
     private var statusBar: NSStatusBar
@@ -22,6 +23,7 @@ class StatusBarController {
             button.image = NSImage(systemSymbolName: "mug", accessibilityDescription: nil)
             button.action = #selector(showApp(sender: ))
             button.target = self
+            
         }
     }
     
@@ -37,4 +39,19 @@ class StatusBarController {
             )
         }
     }
+}
+
+private func configurePopover() {
+    // Configura o conteúdo da popover
+    let contentView = PopoverView().environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
+    let hostingController = NSHostingController(rootView: contentView)
+    
+    AppDelegate.popover.contentViewController = hostingController
+    
+    // Define o tamanho desejado para a popover
+    let popoverSize = CGSize(width: 426, height: 514) // Defina o tamanho desejado aqui
+    AppDelegate.popover.setContentSize(popoverSize)
+    
+    // Outras configurações da popover
+    AppDelegate.popover.behavior = .transient
 }

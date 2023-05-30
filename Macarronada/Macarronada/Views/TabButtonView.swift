@@ -22,41 +22,51 @@ struct TabButtonView: View {
                 
                 VStack{
                     
-                    HStack{
+                    ZStack{
                         
-                        Image(systemName: image)
-                            .foregroundColor(currentTab == title ? .black : .pink)
-                        
-                        Text(title)
-                            .font(.callout)
-                            .fontWeight(.bold)
-                            .foregroundColor(currentTab == title ? .black : .pink)
-                            .padding(.vertical,4)
-                            .frame(maxWidth: .infinity)
-                        
+                            HStack{
+                                
+                                Image(systemName: image)
+                                    .foregroundColor(currentTab == title ? .black : .pink)
+                                    .font(.system(size: 18))
+                                
+                                Text(title)
+                                    .font(.callout)
+                                    .font(.system(size: 18))
+                                    .fontWeight(.bold)
+                                    .foregroundColor(currentTab == title ? .black : .pink)
+                                    .padding(.vertical,4)
+                                    .frame(maxWidth: .infinity)
+                                
+                            }
                     }
+                    .frame(width: 213, height: 56)
+                    .background(
+                        
+                        ZStack{
+                            if currentTab == title{
+                                Rectangle()
+                                    .fill(Color.white)
+                                    .frame(width: 213, height: 56)
+                            } else {
+                                Rectangle()
+                                    .fill(Color.gray)
+                                    .frame(width: 213, height: 56)
+                            }
+                        }
+                    
+                    )
                     
                     Rectangle()
-                        .foregroundColor(currentTab == title ? .black : .gray)
+                        .foregroundColor(currentTab == title ? .black : .white)
                         .frame(width: 213, height: 3)
+                    
                 }
-   
+                
                     
             })
             .buttonStyle(PlainButtonStyle())
-            .background(
-                
-                ZStack{
-                    if currentTab == title{
-                        Rectangle()
-                            .fill(Color.white)
-                    } else {
-                        Rectangle()
-                            .fill(Color.gray)
-                    }
-                }
             
-            )
         }
     }
 

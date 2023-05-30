@@ -12,13 +12,9 @@ struct HistoryView: View {
         
         ZStack{
             Text("Aqui vai ser a tela de History!")
+                .foregroundColor(.black)
         }
         .background(.blue)
     }
 }
 
-struct HistoryView_Previews: PreviewProvider {
-    static var previews: some View {
-        HistoryView()
-    }
-}
