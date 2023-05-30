@@ -11,6 +11,7 @@ import CoreData
 struct ContentView: View {
     @Environment (\.managedObjectContext) private var viewContext
     var body: some View {
+        TypewriterView(text: "Hello, world!")
         Text("Welcome to MenuBarLinks")
             .padding(64)
     }

@@ -19,11 +19,12 @@ extension UserTask {
     @NSManaged public var id: UUID?
     @NSManaged public var time: Int
     @NSManaged public var title: String?
+    @NSManaged public var status: String?
     
     var wrappedID: UUID { id! }
     var wrappedTitle: String { title ?? "" }
     var wrappedTime: Int { time }
-
+    var wrappedStatus: String { status ?? "" }
 }
 
 extension UserTask : Identifiable {

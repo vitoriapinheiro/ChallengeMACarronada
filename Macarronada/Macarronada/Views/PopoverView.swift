@@ -15,6 +15,7 @@ struct PopoverView: View {
     
     @State private var taskTitle: String = ""
     @State private var taskTime: Int = 0
+    @State private var taskStatus: String = "notStarted"
     
     
     
@@ -33,6 +34,7 @@ struct PopoverView: View {
                             addItemToList()
                         }
                 }
+
                 
                 VStack(spacing: 50) {
                     HStack {
@@ -45,6 +47,16 @@ struct PopoverView: View {
                             .frame(height: 87)
                             
                         }
+
+                Spacer()
+                Button("Salvar"){
+                    if !taskTitle.isEmpty{
+                        let userTask = UserTask(context: viewContext)
+                        userTask.id = UUID()
+                        userTask.title = taskTitle
+                        userTask.time = taskTime
+                        userTask.status = taskStatus
+
                         
                     }
                     .background(Color.white)
@@ -171,9 +183,3 @@ struct PopoverView: View {
 //        .padding()
 //    }
 //}
-
-struct PopoverView_Previews: PreviewProvider {
-    static var previews: some View {
-        PopoverView()
-    }
-}
