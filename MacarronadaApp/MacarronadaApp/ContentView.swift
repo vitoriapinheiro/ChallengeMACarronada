@@ -53,7 +53,7 @@ struct ContentView: View {
             }
         }
 //        .onAppear {
-//            UIApplication.shared.applicationIconBadgeNumber = 0
+//            UIApplication.s   hared.applicationIconBadgeNumber = 0
 //        }
     }
 }
