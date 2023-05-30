@@ -11,9 +11,20 @@ import CoreData
 struct ContentView: View {
     @Environment (\.managedObjectContext) private var viewContext
     var body: some View {
-        TypewriterView(text: "Hello, world!")
-        Text("Welcome to MenuBarLinks")
-            .padding(64)
+        HStack{
+            VStack{
+                TypewriterView(text: "Descubra o Start Boost!")
+                TypewriterView(text: "A funcionalidade que aguça sua mente como a primeira xícara de café do dia, impulsionando seu dia com energia e foco. Comprometa-se com um curto período inicial de trabalho e observe sua produtividade disparar!")
+            }
+            VStack{
+                Image("Onboarding")
+                Button("OK"){
+                    print("OK")
+                    }
+                }.buttonStyle(.borderedProminent)
+            }
+        .background(Color.white)
+        .ignoresSafeArea(.all)
     }
     
 //    @FetchRequest(

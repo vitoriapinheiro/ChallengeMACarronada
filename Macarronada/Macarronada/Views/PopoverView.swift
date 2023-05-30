@@ -49,7 +49,6 @@ struct PopoverView: View {
                     Text("\(task.wrappedTime)")
                     Button{
                         print("Clique detectado\n")
-                        
                         AppDelegate.popover.performClose(nil)
                     } label: {
                         Image(systemName: "hourglass")
