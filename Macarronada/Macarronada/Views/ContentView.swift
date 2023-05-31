@@ -11,34 +11,42 @@ import CoreData
 struct ContentView: View {
     @Environment (\.managedObjectContext) private var viewContext
     var body: some View {
-        HStack{
+        VStack{
+            HStack{
+                VStack{
+                    TypewriterView(text: "Descubra o Espresso!")
+                    TypewriterView(text: "Nosso Start Boost aumenta sua produtividade com um período de foco inicial antes das atividades. \nMas lembre-se! O histórico é apagado após 24 horas.")
+                }
+                .frame(width: 250)
+                .padding(.trailing, 60)
+                VStack{
+                    Image("Onboarding")
+                }
+            }.padding(.bottom, 20)
+            
             VStack{
-                TypewriterView(text: "Descubra o Start Boost!")
-                TypewriterView(text: "A funcionalidade que aguça sua mente como a primeira xícara de café do dia, impulsionando seu dia com energia e foco. Comprometa-se com um curto período inicial de trabalho e observe sua produtividade disparar!")
-            }
-            VStack{
-                Image("Onboarding")
-                Button("OK"){
-                    print("OK")
-                    }
-                }.buttonStyle(.borderedProminent)
-            }
+                HStack{
+                    Text("Entenda mais sobre a ciência do Start Boost")
+                        .foregroundColor(.black)
+                    
+                    Button(action: {
+                        print("ok")
+                    }, label: {
+                        Text("OK")
+                            .frame(width: 138, height: 44, alignment: .center)
+                            .background(Color.appBrown)
+                    }).buttonStyle(.plain)
+                        
+                }
+            
+        }
+            .padding(.bottom, 50)
+        }
         .background(Color.white)
         .ignoresSafeArea(.all)
+        .frame(idealWidth: 680, idealHeight: 518)
     }
-    
-//    struct ContentView_Previews: PreviewProvider {
-//        static var previews: some View {
-//            ContentView()
-//        }
-//    }
-//
-//    
-//    
-    
-    
-    
-    
+}
     
 //    @FetchRequest(
 //        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
@@ -109,4 +117,3 @@ struct ContentView: View {
 //
 //        return formatter
 //    }()
-}

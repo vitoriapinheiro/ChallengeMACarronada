@@ -13,7 +13,7 @@ struct TypewriterView: View {
     
     var body: some View {
         Text(animatedText)
-            .accentColor(.black)
+            .foregroundColor(.black)
             .font(.title)
             .padding()
             .onAppear {
