@@ -18,7 +18,9 @@
 		4496E4472A1F984400FF0EC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4496E4462A1F984400FF0EC9 /* AppDelegate.swift */; };
 		4496E44A2A1F998000FF0EC9 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4496E4492A1F998000FF0EC9 /* PopoverView.swift */; };
 		4496E44C2A1F9AE000FF0EC9 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4496E44B2A1F9AE000FF0EC9 /* StatusBarController.swift */; };
+		93EEAAC32A20F33A00466EBE /* TempoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEAAC22A20F33A00466EBE /* TempoView.swift */; };
 		4496E4502A24D4ED00FF0EC9 /* TypeWriterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4496E44F2A24D4ED00FF0EC9 /* TypeWriterView.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,7 @@
 		4496E4492A1F998000FF0EC9 /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
 		4496E44B2A1F9AE000FF0EC9 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		4496E44D2A20E6C900FF0EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		93EEAAC22A20F33A00466EBE /* TempoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoView.swift; sourceTree = "<group>"; };
 		4496E44F2A24D4ED00FF0EC9 /* TypeWriterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeWriterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +119,7 @@
 			children = (
 				4496E42A2A1D033C00FF0EC9 /* ContentView.swift */,
 				4496E4492A1F998000FF0EC9 /* PopoverView.swift */,
+				93EEAAC22A20F33A00466EBE /* TempoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,6 +215,7 @@
 				4496E4382A1F8C4800FF0EC9 /* Persistence.swift in Sources */,
 				4496E44C2A1F9AE000FF0EC9 /* StatusBarController.swift in Sources */,
 				4496E42B2A1D033C00FF0EC9 /* ContentView.swift in Sources */,
+				93EEAAC32A20F33A00466EBE /* TempoView.swift in Sources */,
 				4496E4472A1F984400FF0EC9 /* AppDelegate.swift in Sources */,
 				4496E4292A1D033C00FF0EC9 /* MacarronadaApp.swift in Sources */,
 				4496E43B2A1F918B00FF0EC9 /* UserTasks.xcdatamodeld in Sources */,
@@ -344,7 +349,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Macarronada/Preview Content\"";
-				DEVELOPMENT_TEAM = PST723S8CA;
+				DEVELOPMENT_TEAM = 2WUBK8ZL5T;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -373,7 +378,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Macarronada/Preview Content\"";
-				DEVELOPMENT_TEAM = PST723S8CA;
+				DEVELOPMENT_TEAM = 2WUBK8ZL5T;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
