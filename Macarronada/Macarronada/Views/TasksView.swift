@@ -1,12 +1,12 @@
 //
-//  TaskView.swift
+//  TasksView.swift
 //  Macarronada
 //
-//  Created by vivi on 01/06/23.
+//  Created by Danielly Santos Lopes da Silva on 01/06/23.
 //
 
-import SwiftUI
 
+import SwiftUI
 
 struct TasksView: View {
     @Environment(\.managedObjectContext) var viewContext
@@ -69,17 +69,3 @@ extension NSTableView {
         }
     }
 }
-
-
-//struct TasksView: View {
-//    var body: some View {
-//        Text("Tarefas")
-//            .foregroundColor(.white)
-//    }
-//}
-//
-//struct TaskView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TasksView()
-//    }
-//}
