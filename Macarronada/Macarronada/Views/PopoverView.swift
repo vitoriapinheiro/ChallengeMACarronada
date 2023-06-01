@@ -31,6 +31,22 @@ struct PopoverView: View {
                     .onSubmit {
                         addItemToList()
                     }
+                }.buttonStyle(.borderedProminent)
+            }
+            Divider()
+                .padding(.vertical, 4)
+            ForEach(tasks, id: \.wrappedID){ task in
+                HStack{
+                    Text("\(task.wrappedTitle)")
+                    Spacer()
+                    Text("\(task.wrappedTime)")
+                    Button{
+                        print("Clique detectado\n")
+                        AppDelegate.popover.performClose(nil)
+                    } label: {
+                        Image(systemName: "hourglass")
+                    }
+                }
             }
             
             
@@ -51,7 +67,7 @@ struct PopoverView: View {
                 }
             }
         }
-    }
+    
     
     private func addItemToList() {
         if !textInput.isEmpty {
@@ -60,6 +76,4 @@ struct PopoverView: View {
             isTimerViewVisible = true
         }
     }
-    
-    
 }

@@ -7,14 +7,66 @@
 
 import SwiftUI
 import CoreData
+import AppKit
 
 struct ContentView: View {
     @Environment (\.managedObjectContext) private var viewContext
     var body: some View {
-        TypewriterView(text: "Hello, world!")
-        Text("Welcome to MenuBarLinks")
-            .padding(64)
+        ZStack{
+            Color.white
+            VStack{
+            HStack{
+                VStack(alignment: .leading){
+                    Text("Descubra o Espresso!")
+                        .foregroundColor(.black)
+                        .font(.custom("IBMPlexMono-BoldItalic", size: 32))
+                        .frame(width: 250, height: 84)
+                    TypewriterView(text: "Nosso Start Boost aumenta sua produtividade com um período de foco inicial antes das atividades. \nMas lembre-se! O histórico é apagado após 24 horas.")
+                        .frame(width: 250, height: 216, alignment: .leading)
+                }
+                .padding(.trailing, 60)
+                VStack{
+                    Image("Onboarding")
+                }
+            }.padding(.bottom, 20)
+            
+                VStack{
+                    HStack{
+                        Button(action: {
+                            openLink("https://www.linkedin.com/in/vitoria-pinheiro/")
+                        }, label: {
+                            Text("Entenda mais sobre a ciência do Start Boost")
+                                .foregroundColor(.black)
+                                .font(.custom("IBMPlexMono-Bold", size: 14))
+                                .frame(width: 265, alignment: .leading)
+                        }).buttonStyle(.plain)
+                        Spacer()
+                        Button(action: {
+                            NSApp.keyWindow?.close()
+                        }, label: {
+                            Text("OK")
+                                .foregroundColor(.white)
+                                .font(.custom("IBMPlexMono-Bold", size: 18))
+                                .frame(width: 138, height: 44, alignment: .center)
+                                .background(Color.appBrown)
+                                .cornerRadius(4)
+                        }).buttonStyle(.plain)
+                            
+                    }
+                    .frame(width: 580)
+                }
+            .padding(.bottom, 50)
+        }
+            .padding(50)
+        }
+        .frame(idealWidth: 680, maxWidth: .infinity, idealHeight: 518, maxHeight: .infinity)
     }
+    
+    func openLink(_ urlString: String){
+        guard let url = URL(string: urlString) else {return}
+        NSWorkspace.shared.open(url)
+    }
+}
     
 //    @FetchRequest(
 //        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
@@ -85,4 +137,3 @@ struct ContentView: View {
 //
 //        return formatter
 //    }()
-}
