@@ -27,7 +27,7 @@ struct TabButtonView: View {
                     HStack{
                         
                         Image(systemName: image)
-                            .foregroundColor(currentTab == title ? .black : .appBrown)
+                            .foregroundColor(currentTab == title ? .black : .pink)
                             .font(.system(size: 18))
                         
                         Text(title)
