@@ -13,4 +13,5 @@ extension Color{
     public static let appLightOrange: Color = Color(red: 255/255, green: 192/255, blue: 167/255)
     public static let appBlue: Color = Color(red: 52/255, green: 117/255, blue: 141/255)
     public static let appGreen: Color = Color(red: 12/255, green: 172/255, blue: 157/255)
+    public static let appLightBrown: Color = Color(red: 128/255, green: 115/255, blue: 112/255)
 }
