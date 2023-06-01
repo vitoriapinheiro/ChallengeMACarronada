@@ -22,6 +22,7 @@ struct PopoverView: View {
             Color.white
             VStack(alignment: .leading){
                 TabBarView()
+                TimeView(timeText: "batata")
             TextField("Digite aqui", text: $taskTitle)
                     .foregroundColor(.black)
             HStack{
