@@ -42,12 +42,7 @@ struct TabBarView: View {
             
         }
         .padding(.all)
-        //.background(.white)
+        
     }
 }
 
-struct TabBarView_Previews: PreviewProvider {
-    static var previews: some View {
-        TabBarView()
-    }
-}
