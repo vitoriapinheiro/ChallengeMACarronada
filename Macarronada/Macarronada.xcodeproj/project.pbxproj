@@ -10,6 +10,8 @@
 		441D02492A27673300A8D9FE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441D02482A27673300A8D9FE /* Colors.swift */; };
 		441D024C2A27702E00A8D9FE /* IBMPlexMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 441D024B2A27702E00A8D9FE /* IBMPlexMono-Medium.ttf */; };
 		441D024E2A27703E00A8D9FE /* IBMPlexMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 441D024D2A27703E00A8D9FE /* IBMPlexMono-Bold.ttf */; };
+		441D02502A28490E00A8D9FE /* IBMPlexMono-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 441D024F2A28490E00A8D9FE /* IBMPlexMono-Italic.ttf */; };
+		441D02522A284AF800A8D9FE /* IBMPlexMono-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 441D02512A284AF800A8D9FE /* IBMPlexMono-BoldItalic.ttf */; };
 		4496E4292A1D033C00FF0EC9 /* MacarronadaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4496E4282A1D033C00FF0EC9 /* MacarronadaApp.swift */; };
 		4496E42B2A1D033C00FF0EC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4496E42A2A1D033C00FF0EC9 /* ContentView.swift */; };
 		4496E42D2A1D033D00FF0EC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4496E42C2A1D033D00FF0EC9 /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 		441D02482A27673300A8D9FE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		441D024B2A27702E00A8D9FE /* IBMPlexMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Medium.ttf"; sourceTree = "<group>"; };
 		441D024D2A27703E00A8D9FE /* IBMPlexMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Bold.ttf"; sourceTree = "<group>"; };
+		441D024F2A28490E00A8D9FE /* IBMPlexMono-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Italic.ttf"; sourceTree = "<group>"; };
+		441D02512A284AF800A8D9FE /* IBMPlexMono-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-BoldItalic.ttf"; sourceTree = "<group>"; };
 		4496E4252A1D033C00FF0EC9 /* Macarronada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macarronada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4496E4282A1D033C00FF0EC9 /* MacarronadaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacarronadaApp.swift; sourceTree = "<group>"; };
 		4496E42A2A1D033C00FF0EC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,8 +63,10 @@
 		441D024A2A27700D00A8D9FE /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				441D02512A284AF800A8D9FE /* IBMPlexMono-BoldItalic.ttf */,
 				441D024D2A27703E00A8D9FE /* IBMPlexMono-Bold.ttf */,
 				441D024B2A27702E00A8D9FE /* IBMPlexMono-Medium.ttf */,
+				441D024F2A28490E00A8D9FE /* IBMPlexMono-Italic.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -210,9 +216,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441D02522A284AF800A8D9FE /* IBMPlexMono-BoldItalic.ttf in Resources */,
 				441D024E2A27703E00A8D9FE /* IBMPlexMono-Bold.ttf in Resources */,
 				441D024C2A27702E00A8D9FE /* IBMPlexMono-Medium.ttf in Resources */,
 				4496E4302A1D033D00FF0EC9 /* Preview Assets.xcassets in Resources */,
+				441D02502A28490E00A8D9FE /* IBMPlexMono-Italic.ttf in Resources */,
 				4496E42D2A1D033D00FF0EC9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

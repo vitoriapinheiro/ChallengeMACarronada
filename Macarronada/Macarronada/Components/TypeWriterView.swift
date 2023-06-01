@@ -14,7 +14,7 @@ struct TypewriterView: View {
     var body: some View {
         Text(animatedText)
             .foregroundColor(.black)
-            .font(.title)
+            .font(.custom("IBMPlexMono-Medium", size: 16))
             .padding()
             .onAppear {
                 animateText()
@@ -23,7 +23,7 @@ struct TypewriterView: View {
     
     private func animateText() {
         for (index, character) in text.enumerated() {
-            DispatchQueue.main.asyncAfter(deadline: .now() + Double(index) * 0.1) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + Double(index) * 0.05) {
                 animatedText += String(character)
             }
         }
