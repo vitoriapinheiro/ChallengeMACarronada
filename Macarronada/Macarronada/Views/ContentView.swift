@@ -15,6 +15,7 @@ struct ContentView: View {
         ZStack{
             Color.white
             VStack{
+                
             HStack{
                 VStack(alignment: .leading){
                     Text("Descubra o Espresso!")
@@ -24,13 +25,13 @@ struct ContentView: View {
                     TypewriterView(text: "Nosso Start Boost aumenta sua produtividade com um período de foco inicial antes das atividades. \nMas lembre-se! O histórico é apagado após 24 horas.")
                         .frame(width: 250, height: 216, alignment: .leading)
                 }
-                .padding(.trailing, 60)
+                .padding(.trailing, 85)
                 VStack{
                     Image("Onboarding")
                 }
             }.padding(.bottom, 20)
             
-                VStack{
+                //VStack{
                     HStack{
                         Button(action: {
                             openLink("https://www.linkedin.com/in/vitoria-pinheiro/")
@@ -39,6 +40,7 @@ struct ContentView: View {
                                 .foregroundColor(.black)
                                 .font(.custom("IBMPlexMono-Bold", size: 14))
                                 .frame(width: 265, alignment: .leading)
+                                .underline()
                         }).buttonStyle(.plain)
                         Spacer()
                         Button(action: {
@@ -54,8 +56,8 @@ struct ContentView: View {
                             
                     }
                     .frame(width: 580)
-                }
-            .padding(.bottom, 50)
+                //}
+            //.padding(.bottom, 50)
         }
             .padding(50)
         }
