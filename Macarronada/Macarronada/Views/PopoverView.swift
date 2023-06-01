@@ -17,63 +17,77 @@ struct PopoverView: View {
     @State private var taskTime: Int = 0
     @State private var taskStatus: String = "notStarted"
     
-    @State private var textInput: String = ""
-    @State private var inputList: [String] = []
-    @State private var isTimerViewVisible = false
-    
     var body: some View {
-        VStack {
-            
-            VStack {
-                TextField("Digite aqui", text: $textInput)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                    .onSubmit {
-                        addItemToList()
+        ZStack{
+            Color.white
+            VStack(alignment: .leading){
+                TabBarView()
+            TextField("Digite aqui", text: $taskTitle)
+                    .foregroundColor(.black)
+            HStack{
+                Button("Apagar tudo"){
+                    deletePersistentStore()
+                }
+                .buttonStyle(.borderedProminent)
+                Button("Cancelar"){
+                    NSApplication.shared.terminate(nil)
+                }
+                .buttonStyle(.borderedProminent)
+                Spacer()
+                Button("Salvar"){
+                    if !taskTitle.isEmpty{
+                        let userTask = UserTask(context: viewContext)
+                        userTask.id = UUID()
+                        userTask.title = taskTitle
+                        userTask.time = taskTime
+                        userTask.status = taskStatus
+                        
+                        try? viewContext.save()
+                        
+                        taskTitle = ""
+                        taskTime = 0
                     }
                 }.buttonStyle(.borderedProminent)
             }
-            Divider()
-                .padding(.vertical, 4)
-            ForEach(tasks, id: \.wrappedID){ task in
-                HStack{
-                    Text("\(task.wrappedTitle)")
-                    Spacer()
-                    Text("\(task.wrappedTime)")
-                    Button{
-                        print("Clique detectado\n")
-                        AppDelegate.popover.performClose(nil)
-                    } label: {
-                        Image(systemName: "hourglass")
-                    }
-                }
-            }
-            
-            
-            VStack(spacing: 50) {
-                HStack {
-                    List(inputList, id: \.self) { input in
-                        HStack {
-                            
-                            TempoView(timeText: input)
+            ScrollView{
+                VStack{
+                    ForEach(tasks, id: \.wrappedID){ task in
+                        HStack{
+                            Text("\(task.wrappedTitle)")
+                                .foregroundColor(.black)
+                            Spacer()
+                            Text("\(task.wrappedTime)")
+                            Button{
+                                print("Clique detectado\n")
+                                
+                                AppDelegate.popover.performClose(nil)
+                            } label: {
+                                Image(systemName: "hourglass")
+                            }
                         }
-                        .listRowBackground(Color.cyan) // Altere a cor de fundo da célula
-                        .frame(height: 87)
-                        
                     }
-                    
-                    Spacer()
-                    
                 }
             }
         }
+            .padding()
+        }.frame(idealWidth: 350, maxWidth: 350, idealHeight: 350, maxHeight: 460)
+    }
     
-    
-    private func addItemToList() {
-        if !textInput.isEmpty {
-            inputList.append(textInput)
-            textInput = ""
-            isTimerViewVisible = true
+    func deletePersistentStore() {
+        let persistentContainer = NSPersistentContainer(name: "UserTasks")
+        persistentContainer.loadPersistentStores { _, error in
+            if let error = error {
+                print("Failed to load persistent stores: \(error)")
+            } else {
+                do {
+                    try persistentContainer.persistentStoreCoordinator.destroyPersistentStore(at: persistentContainer.persistentStoreCoordinator.persistentStores[0].url!, ofType: NSSQLiteStoreType, options: nil)
+                    print("Persistent store deleted successfully.")
+                } catch {
+                    print("Failed to delete persistent store: \(error)")
+                }
+            }
         }
     }
+
 }
+

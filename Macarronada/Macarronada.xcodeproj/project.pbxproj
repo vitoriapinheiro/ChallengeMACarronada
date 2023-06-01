@@ -12,6 +12,10 @@
 		441D024E2A27703E00A8D9FE /* IBMPlexMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 441D024D2A27703E00A8D9FE /* IBMPlexMono-Bold.ttf */; };
 		441D02502A28490E00A8D9FE /* IBMPlexMono-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 441D024F2A28490E00A8D9FE /* IBMPlexMono-Italic.ttf */; };
 		441D02522A284AF800A8D9FE /* IBMPlexMono-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 441D02512A284AF800A8D9FE /* IBMPlexMono-BoldItalic.ttf */; };
+		441D02542A28BCBE00A8D9FE /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441D02532A28BCBE00A8D9FE /* TaskView.swift */; };
+		441D02562A28BCF300A8D9FE /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441D02552A28BCF300A8D9FE /* HistoryView.swift */; };
+		441D02582A28BE1500A8D9FE /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441D02572A28BE1500A8D9FE /* TabBarView.swift */; };
+		441D025A2A28BEB000A8D9FE /* TabButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441D02592A28BEB000A8D9FE /* TabButtonView.swift */; };
 		4496E4292A1D033C00FF0EC9 /* MacarronadaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4496E4282A1D033C00FF0EC9 /* MacarronadaApp.swift */; };
 		4496E42B2A1D033C00FF0EC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4496E42A2A1D033C00FF0EC9 /* ContentView.swift */; };
 		4496E42D2A1D033D00FF0EC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4496E42C2A1D033D00FF0EC9 /* Assets.xcassets */; };
@@ -23,9 +27,8 @@
 		4496E4472A1F984400FF0EC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4496E4462A1F984400FF0EC9 /* AppDelegate.swift */; };
 		4496E44A2A1F998000FF0EC9 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4496E4492A1F998000FF0EC9 /* PopoverView.swift */; };
 		4496E44C2A1F9AE000FF0EC9 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4496E44B2A1F9AE000FF0EC9 /* StatusBarController.swift */; };
-		93EEAAC32A20F33A00466EBE /* TempoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEAAC22A20F33A00466EBE /* TempoView.swift */; };
 		4496E4502A24D4ED00FF0EC9 /* TypeWriterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4496E44F2A24D4ED00FF0EC9 /* TypeWriterView.swift */; };
-
+		93EEAAC32A20F33A00466EBE /* TempoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEAAC22A20F33A00466EBE /* TempoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,10 @@
 		441D024D2A27703E00A8D9FE /* IBMPlexMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Bold.ttf"; sourceTree = "<group>"; };
 		441D024F2A28490E00A8D9FE /* IBMPlexMono-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Italic.ttf"; sourceTree = "<group>"; };
 		441D02512A284AF800A8D9FE /* IBMPlexMono-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-BoldItalic.ttf"; sourceTree = "<group>"; };
+		441D02532A28BCBE00A8D9FE /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		441D02552A28BCF300A8D9FE /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		441D02572A28BE1500A8D9FE /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarView.swift; path = Macarronada/Assets.xcassets/TabBarView.swift; sourceTree = SOURCE_ROOT; };
+		441D02592A28BEB000A8D9FE /* TabButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButtonView.swift; sourceTree = "<group>"; };
 		4496E4252A1D033C00FF0EC9 /* Macarronada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macarronada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4496E4282A1D033C00FF0EC9 /* MacarronadaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacarronadaApp.swift; sourceTree = "<group>"; };
 		4496E42A2A1D033C00FF0EC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,8 +55,8 @@
 		4496E4492A1F998000FF0EC9 /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
 		4496E44B2A1F9AE000FF0EC9 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		4496E44D2A20E6C900FF0EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		93EEAAC22A20F33A00466EBE /* TempoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoView.swift; sourceTree = "<group>"; };
 		4496E44F2A24D4ED00FF0EC9 /* TypeWriterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeWriterView.swift; sourceTree = "<group>"; };
+		93EEAAC22A20F33A00466EBE /* TempoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +148,8 @@
 				4496E42A2A1D033C00FF0EC9 /* ContentView.swift */,
 				4496E4492A1F998000FF0EC9 /* PopoverView.swift */,
 				93EEAAC22A20F33A00466EBE /* TempoView.swift */,
+				441D02532A28BCBE00A8D9FE /* TaskView.swift */,
+				441D02552A28BCF300A8D9FE /* HistoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -149,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				4496E44F2A24D4ED00FF0EC9 /* TypeWriterView.swift */,
+				441D02572A28BE1500A8D9FE /* TabBarView.swift */,
+				441D02592A28BEB000A8D9FE /* TabButtonView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -243,10 +254,14 @@
 				4496E4382A1F8C4800FF0EC9 /* Persistence.swift in Sources */,
 				4496E44C2A1F9AE000FF0EC9 /* StatusBarController.swift in Sources */,
 				4496E42B2A1D033C00FF0EC9 /* ContentView.swift in Sources */,
+				441D02562A28BCF300A8D9FE /* HistoryView.swift in Sources */,
+				441D02542A28BCBE00A8D9FE /* TaskView.swift in Sources */,
 				93EEAAC32A20F33A00466EBE /* TempoView.swift in Sources */,
 				4496E4472A1F984400FF0EC9 /* AppDelegate.swift in Sources */,
 				4496E4292A1D033C00FF0EC9 /* MacarronadaApp.swift in Sources */,
+				441D025A2A28BEB000A8D9FE /* TabButtonView.swift in Sources */,
 				4496E43B2A1F918B00FF0EC9 /* UserTasks.xcdatamodeld in Sources */,
+				441D02582A28BE1500A8D9FE /* TabBarView.swift in Sources */,
 				4496E4502A24D4ED00FF0EC9 /* TypeWriterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,7 +392,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Macarronada/Preview Content\"";
-				DEVELOPMENT_TEAM = 2WUBK8ZL5T;
+				DEVELOPMENT_TEAM = PST723S8CA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -406,7 +421,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Macarronada/Preview Content\"";
-				DEVELOPMENT_TEAM = 2WUBK8ZL5T;
+				DEVELOPMENT_TEAM = PST723S8CA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
