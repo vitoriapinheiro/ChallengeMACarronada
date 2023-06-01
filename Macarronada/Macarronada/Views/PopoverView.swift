@@ -22,7 +22,8 @@ struct PopoverView: View {
             Color.white
             VStack(alignment: .leading){
                 TabBarView()
-                TimeView(timeText: "batata")
+               // TimeView(timeText: "batata")
+                NewTimeView(timeText: "teste chelly")
             TextField("Digite aqui", text: $taskTitle)
                     .foregroundColor(.black)
             HStack{
@@ -71,7 +72,7 @@ struct PopoverView: View {
             }
         }
             .padding()
-        }.frame(idealWidth: 350, maxWidth: 350, idealHeight: 350, maxHeight: 460)
+        }.frame(idealWidth: 700, maxWidth: 1000, idealHeight: 700, maxHeight: 1000)
     }
     
     func deletePersistentStore() {

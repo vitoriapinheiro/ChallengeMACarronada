@@ -4,8 +4,10 @@
 //
 // Created by vko on 31/05/23.
 //
+
 import SwiftUI
 import UserNotifications
+
 struct TimeView: View {
     let timeOptions = [1, 10, 15]
     @State private var timeRemaining = 600 // 10 minutos em segundos
@@ -45,11 +47,17 @@ struct TimeView: View {
                 UNUserNotificationCenter.current().add(request)
                 }
     }
+    
+    
+    
     var body: some View {
+        
         VStack(alignment: .leading) {
             HStack {
+                
                 Text("oii")
                     .frame(width: 30, height: 10)
+                
                 Button(action: {
                     showTimeOptions = true
                     NotificationManager.instance.requestAuthorization()
@@ -59,40 +67,51 @@ struct TimeView: View {
                 }
                 .popover(isPresented: $showTimeOptions) {
                     menuContent
-                        .background(Color.black)
+                        .background(Color.appBrown)
                         .padding()
                 }
+                
             }.frame(width: 20, height: 20)
-                .background(Color.blue)
+                .background(Color.appBrown)
+            
             HStack {
+                
                 ZStack {
-                    Rectangle().foregroundColor(.red)
+                    
+                    Rectangle()
+                        .foregroundColor(.purple)
+                    
                     VStack(alignment: .leading) {
+                        
                         ZStack {
                             Rectangle()
+                            // content CARD
                             HStack {
                                 Text(timeText)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.green)
                                     .font(.headline)
                                     .cornerRadius(8)
                                 Spacer()
                                 Text(timeString(from: timeRemaining))
                                     .font(.system(size: 14))
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.purple)
                                 //.buttonStyle(BorderlessButtonStyle())
                             }.padding(4)
                         }
+                        
                         HStack {
+                            // BARRA DE PROGRESSO DO CARD
                             ProgressView(value: Double(timeRemaining), total: Double(getTotalTime()))
-                                .accentColor(.black)
+                                .accentColor(.appBrown)
                                 .padding(.horizontal)
+                               
                         }
                     }
                 }
                 .cornerRadius(8)
                 HStack {
                     Button {
-                        print("printou")
+                        print("printou aqui")
                     } label: {
                         if (finished) {
                             Image(systemName: "pause.fill")
