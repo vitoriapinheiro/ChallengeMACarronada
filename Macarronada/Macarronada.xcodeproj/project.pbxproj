@@ -28,7 +28,7 @@
 		4496E44A2A1F998000FF0EC9 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4496E4492A1F998000FF0EC9 /* PopoverView.swift */; };
 		4496E44C2A1F9AE000FF0EC9 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4496E44B2A1F9AE000FF0EC9 /* StatusBarController.swift */; };
 		4496E4502A24D4ED00FF0EC9 /* TypeWriterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4496E44F2A24D4ED00FF0EC9 /* TypeWriterView.swift */; };
-		93EEAAC32A20F33A00466EBE /* TempoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEAAC22A20F33A00466EBE /* TempoView.swift */; };
+		93EEAAC32A20F33A00466EBE /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEAAC22A20F33A00466EBE /* TimeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +56,7 @@
 		4496E44B2A1F9AE000FF0EC9 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		4496E44D2A20E6C900FF0EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4496E44F2A24D4ED00FF0EC9 /* TypeWriterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeWriterView.swift; sourceTree = "<group>"; };
-		93EEAAC22A20F33A00466EBE /* TempoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoView.swift; sourceTree = "<group>"; };
+		93EEAAC22A20F33A00466EBE /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,7 @@
 			children = (
 				4496E42A2A1D033C00FF0EC9 /* ContentView.swift */,
 				4496E4492A1F998000FF0EC9 /* PopoverView.swift */,
-				93EEAAC22A20F33A00466EBE /* TempoView.swift */,
+				93EEAAC22A20F33A00466EBE /* TimeView.swift */,
 				441D02532A28BCBE00A8D9FE /* TaskView.swift */,
 				441D02552A28BCF300A8D9FE /* HistoryView.swift */,
 			);
@@ -256,7 +256,7 @@
 				4496E42B2A1D033C00FF0EC9 /* ContentView.swift in Sources */,
 				441D02562A28BCF300A8D9FE /* HistoryView.swift in Sources */,
 				441D02542A28BCBE00A8D9FE /* TaskView.swift in Sources */,
-				93EEAAC32A20F33A00466EBE /* TempoView.swift in Sources */,
+				93EEAAC32A20F33A00466EBE /* TimeView.swift in Sources */,
 				4496E4472A1F984400FF0EC9 /* AppDelegate.swift in Sources */,
 				4496E4292A1D033C00FF0EC9 /* MacarronadaApp.swift in Sources */,
 				441D025A2A28BEB000A8D9FE /* TabButtonView.swift in Sources */,
