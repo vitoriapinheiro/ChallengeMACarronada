@@ -9,8 +9,13 @@ import SwiftUI
 
 struct TaskView: View {
     var body: some View {
-        Text("Tarefas")
-            .foregroundColor(.black)
+        VStack{
+            Text("Tarefas")
+                .foregroundColor(.black)
+        
+        }
+        
+        
     }
 }
 

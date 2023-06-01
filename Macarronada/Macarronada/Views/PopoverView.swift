@@ -32,11 +32,9 @@ struct PopoverView: View {
             }
             .padding(.top)
             
-            Spacer(minLength: 20)
-            
             if isTasksViewVisible {
                 
-                TasksView()
+                TaskView()
                 
             } else if isHistoryViewVisible {
                 

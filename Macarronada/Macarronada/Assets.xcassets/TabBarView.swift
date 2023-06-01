@@ -33,7 +33,7 @@ struct TabBarView: View {
             
             if isTasksViewVisible {
                 
-                TasksView()
+                TaskView()
                 
             } else if isHistoryViewVisible {
                 HistoryView()
