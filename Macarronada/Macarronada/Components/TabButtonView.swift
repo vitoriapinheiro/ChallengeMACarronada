@@ -26,6 +26,7 @@ struct TabButtonView: View {
             
             VStack{
                     HStack{
+                        
                         Image(systemName: image)
                             .foregroundColor(currentTab == title ? .appBrown : .appLightBrown)
                             .font(.system(size: 18))
@@ -39,8 +40,13 @@ struct TabButtonView: View {
                             .padding(.trailing, 65)
                             
                     }
-                    .frame(width: 175, height: 40)
-                    .background(
+                    
+                    Rectangle()
+                        .foregroundColor(currentTab == title ? .appBrown : .appGray)
+                        .frame(width: 175, height: 3)
+            }
+            .frame(width: 175, height: 40)
+            .background(
                         ZStack{
                             if currentTab == title{
                                 Rectangle()
@@ -50,11 +56,7 @@ struct TabButtonView: View {
                                     .fill(Color.appGray)
                             }
                         }
-                    )
-                    Rectangle()
-                        .foregroundColor(currentTab == title ? .appBrown : .appGray)
-                        .frame(width: 175, height: 3)
-            }
+            )
         })
         .buttonStyle(PlainButtonStyle())
         
