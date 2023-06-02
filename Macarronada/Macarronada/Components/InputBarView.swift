@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct InputBarView: View {
     
@@ -85,19 +86,7 @@ struct InputBarView: View {
             ScrollView{
                 VStack{
                     ForEach(tasks, id: \.wrappedID){ task in
-                        HStack{
-                            Text("\(task.wrappedTitle)")
-                                .foregroundColor(.black)
-                            Spacer()
-                            Text("\(task.wrappedTime)")
-                            Button{
-                                print("Clique detectado\n")
-                                
-                                AppDelegate.popover.performClose(nil)
-                            } label: {
-                                Image(systemName: "hourglass")
-                            }
-                        }
+                        NewTimeView(timeText: "\(task.wrappedTitle)")
                     }
                 }
             }
@@ -107,19 +96,19 @@ struct InputBarView: View {
         
     }
     
-    func deletePersistentStore() {
-        let persistentContainer = NSPersistentContainer(name: "UserTasks")
-        persistentContainer.loadPersistentStores { _, error in
-            if let error = error {
-                print("Failed to load persistent stores: \(error)")
-            } else {
-                do {
-                    try persistentContainer.persistentStoreCoordinator.destroyPersistentStore(at: persistentContainer.persistentStoreCoordinator.persistentStores[0].url!, ofType: NSSQLiteStoreType, options: nil)
-                    print("Persistent store deleted successfully.")
-                } catch {
-                    print("Failed to delete persistent store: \(error)")
-                }
+    func updateItem(with uuid: UUID) {
+        let fetchRequest: NSFetchRequest<UserTask> = UserTask.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "id == %@", uuid as CVarArg)
+        
+        do {
+            let results = try viewContext.fetch(fetchRequest)
+            if let item = results.first {
+                item.status = "inProgress"
+                try viewContext.save()
+                print("Item updated successfully.")
             }
+        } catch {
+            print("Failed to update item: \(error)")
         }
     }
 }

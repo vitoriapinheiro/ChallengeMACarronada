@@ -14,14 +14,18 @@ struct HistoryCardView: View {
     
     var body: some View {
         ScrollView(.vertical){
-            VStack{
+//            Button("Limpar histórico"){
+//                deletePersistentStore()
+//            }
+//            .buttonStyle(.borderedProminent)
+            VStack(alignment: .center){
                 ForEach(tasks, id: \.wrappedID){ task in
                     HStack{
                         Text("\(task.wrappedTitle)")
                             .foregroundColor(.black)
                             .font(.custom("IBMPlexMono-Medium", size: 16))
                             .padding(.leading, 12)
-                            .frame(width: 200)
+                            .frame(width: 180)
                         Text("\(task.wrappedTime)")
                             .foregroundColor(.black)
                             .font(.custom("IBMPlexMono-Medium", size: 16))
@@ -36,9 +40,24 @@ struct HistoryCardView: View {
                     }
                     .background(Color.appGray)
                     .cornerRadius(8)
-                    .frame(width: 330)
+                    .frame(width: 280)
                 }
-            }.frame(width: 330)
+            }.frame(width: 280)
+        }
+    }
+    func deletePersistentStore() {
+        let persistentContainer = NSPersistentContainer(name: "UserTasks")
+        persistentContainer.loadPersistentStores { _, error in
+            if let error = error {
+                print("Failed to load persistent stores: \(error)")
+            } else {
+                do {
+                    try persistentContainer.persistentStoreCoordinator.destroyPersistentStore(at: persistentContainer.persistentStoreCoordinator.persistentStores[0].url!, ofType: NSSQLiteStoreType, options: nil)
+                    print("Persistent store deleted successfully.")
+                } catch {
+                    print("Failed to delete persistent store: \(error)")
+                }
+            }
         }
     }
 }

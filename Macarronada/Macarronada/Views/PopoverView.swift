@@ -20,10 +20,10 @@ struct PopoverView: View {
     var body: some View {
         ZStack{
             Color.white
-            VStack{
+            VStack(alignment: .center){
                 TabBarView()
             }
-        }.frame(minWidth: 350, maxWidth: 350, minHeight: 350, maxHeight: 460)
+        }.frame(minWidth: 400, maxWidth: 600, minHeight: 400, maxHeight: 600)
     }
     
     func deletePersistentStore() {
