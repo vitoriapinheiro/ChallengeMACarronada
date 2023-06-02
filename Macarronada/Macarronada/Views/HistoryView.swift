@@ -8,30 +8,16 @@
 import SwiftUI
 
 struct HistoryView: View {
-    @Environment(\.managedObjectContext) var viewContext
-    
-    @FetchRequest(sortDescriptors: [])
-    var tasks: FetchedResults<UserTask>
-    
+    @State var update = false
+
     var body: some View {
         VStack(alignment: .center){
-            Button("Limpar histórico"){deletePersistentStore()}
-                .buttonStyle(.borderedProminent)
-            ForEach(tasks, id: \.wrappedID){ task in
-                HStack{
-                    Text("\(task.wrappedTitle)")
-                        .foregroundColor(.black)
-                    Spacer()
-                    Text("\(task.wrappedTime)")
-                    Button{
-                        print("Clique detectado\n")
-                        
-                        AppDelegate.popover.performClose(nil)
-                    } label: {
-                        Image(systemName: "hourglass")
-                    }
-                }
+            Button("Limpar histórico"){
+                deletePersistentStore()
+                self.update = true
             }
+                .buttonStyle(.borderedProminent)
+            HistoryCardView()
         }
     }
     

@@ -17,6 +17,8 @@
 		441D02582A28BE1500A8D9FE /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441D02572A28BE1500A8D9FE /* TabBarView.swift */; };
 		441D025A2A28BEB000A8D9FE /* TabButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441D02592A28BEB000A8D9FE /* TabButtonView.swift */; };
 		445C4BCE2A2932B600011C0B /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445C4BCD2A2932B600011C0B /* Notification.swift */; };
+		445C4BD22A298D0E00011C0B /* InputBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445C4BD12A298D0E00011C0B /* InputBarView.swift */; };
+		445C4BD42A298E5200011C0B /* HistoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445C4BD32A298E5200011C0B /* HistoryCardView.swift */; };
 		4496E4292A1D033C00FF0EC9 /* MacarronadaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4496E4282A1D033C00FF0EC9 /* MacarronadaApp.swift */; };
 		4496E42B2A1D033C00FF0EC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4496E42A2A1D033C00FF0EC9 /* ContentView.swift */; };
 		4496E42D2A1D033D00FF0EC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4496E42C2A1D033D00FF0EC9 /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 		441D02572A28BE1500A8D9FE /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarView.swift; path = Macarronada/Assets.xcassets/TabBarView.swift; sourceTree = SOURCE_ROOT; };
 		441D02592A28BEB000A8D9FE /* TabButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButtonView.swift; sourceTree = "<group>"; };
 		445C4BCD2A2932B600011C0B /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		445C4BD12A298D0E00011C0B /* InputBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBarView.swift; sourceTree = "<group>"; };
+		445C4BD32A298E5200011C0B /* HistoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCardView.swift; sourceTree = "<group>"; };
 		4496E4252A1D033C00FF0EC9 /* Macarronada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macarronada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4496E4282A1D033C00FF0EC9 /* MacarronadaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacarronadaApp.swift; sourceTree = "<group>"; };
 		4496E42A2A1D033C00FF0EC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -158,7 +162,6 @@
 			children = (
 				4496E42A2A1D033C00FF0EC9 /* ContentView.swift */,
 				4496E4492A1F998000FF0EC9 /* PopoverView.swift */,
-				93EEAAC22A20F33A00466EBE /* TimeView.swift */,
 				441D02532A28BCBE00A8D9FE /* TasksView.swift */,
 				441D02552A28BCF300A8D9FE /* HistoryView.swift */,
 			);
@@ -171,6 +174,9 @@
 				4496E44F2A24D4ED00FF0EC9 /* TypeWriterView.swift */,
 				441D02572A28BE1500A8D9FE /* TabBarView.swift */,
 				441D02592A28BEB000A8D9FE /* TabButtonView.swift */,
+				445C4BD12A298D0E00011C0B /* InputBarView.swift */,
+				445C4BD32A298E5200011C0B /* HistoryCardView.swift */,
+				93EEAAC22A20F33A00466EBE /* TimeView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -273,7 +279,9 @@
 				441D025A2A28BEB000A8D9FE /* TabButtonView.swift in Sources */,
 				4496E43B2A1F918B00FF0EC9 /* UserTasks.xcdatamodeld in Sources */,
 				441D02582A28BE1500A8D9FE /* TabBarView.swift in Sources */,
+				445C4BD22A298D0E00011C0B /* InputBarView.swift in Sources */,
 				4496E4502A24D4ED00FF0EC9 /* TypeWriterView.swift in Sources */,
+				445C4BD42A298E5200011C0B /* HistoryCardView.swift in Sources */,
 				445C4BCE2A2932B600011C0B /* Notification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
