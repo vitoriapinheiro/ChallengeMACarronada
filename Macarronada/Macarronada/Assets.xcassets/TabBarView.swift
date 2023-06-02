@@ -32,7 +32,9 @@ struct TabBarView: View {
             Spacer(minLength: 20)
             
             if isTasksViewVisible {
-                TaskView()
+               // TaskView()
+                Text("Oi chelly")
+                    .foregroundColor(.appBrown)
             } else if isHistoryViewVisible {
                 HistoryView()
                 

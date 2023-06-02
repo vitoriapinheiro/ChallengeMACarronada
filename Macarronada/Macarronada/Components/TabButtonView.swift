@@ -43,9 +43,9 @@ struct TabButtonView: View {
                     
                     Rectangle()
                         .foregroundColor(currentTab == title ? .appBrown : .appGray)
-                        .frame(width: 175, height: 3)
+                        .frame(width: 200, height: 3)
             }
-            .frame(width: 175, height: 40)
+            .frame(width: 200, height: 40)
             .background(
                         ZStack{
                             if currentTab == title{

@@ -30,6 +30,7 @@
 		4496E4502A24D4ED00FF0EC9 /* TypeWriterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4496E44F2A24D4ED00FF0EC9 /* TypeWriterView.swift */; };
 		93EEAAC32A20F33A00466EBE /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEAAC22A20F33A00466EBE /* TimeView.swift */; };
 		9449179D2A29452600C71C87 /* NewTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9449179C2A29452600C71C87 /* NewTimeView.swift */; };
+		9449179F2A29629800C71C87 /* InputBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9449179E2A29629800C71C87 /* InputBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		4496E44F2A24D4ED00FF0EC9 /* TypeWriterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeWriterView.swift; sourceTree = "<group>"; };
 		93EEAAC22A20F33A00466EBE /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 		9449179C2A29452600C71C87 /* NewTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimeView.swift; sourceTree = "<group>"; };
+		9449179E2A29629800C71C87 /* InputBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				441D02532A28BCBE00A8D9FE /* TaskView.swift */,
 				441D02552A28BCF300A8D9FE /* HistoryView.swift */,
 				9449179C2A29452600C71C87 /* NewTimeView.swift */,
+				9449179E2A29629800C71C87 /* InputBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				4496E4292A1D033C00FF0EC9 /* MacarronadaApp.swift in Sources */,
 				441D025A2A28BEB000A8D9FE /* TabButtonView.swift in Sources */,
 				4496E43B2A1F918B00FF0EC9 /* UserTasks.xcdatamodeld in Sources */,
+				9449179F2A29629800C71C87 /* InputBarView.swift in Sources */,
 				441D02582A28BE1500A8D9FE /* TabBarView.swift in Sources */,
 				4496E4502A24D4ED00FF0EC9 /* TypeWriterView.swift in Sources */,
 			);

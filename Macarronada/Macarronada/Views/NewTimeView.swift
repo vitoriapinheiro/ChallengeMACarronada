@@ -53,9 +53,6 @@ struct NewTimeView: View {
     }
     
     
-    
-    
-    
     // codigo de chelly
     
     var body: some View {
@@ -67,6 +64,7 @@ struct NewTimeView: View {
 
                 ZStack{
                     Color.appSuperLightOrange
+                    
                     
                     VStack{
                         
@@ -82,6 +80,7 @@ struct NewTimeView: View {
                                     .imageScale(.large)
                                     .foregroundColor(.appBrown)
                                     .frame(width: 120, height: 40, alignment: .trailing)
+                                    
                             }
                             
                         }
@@ -93,6 +92,7 @@ struct NewTimeView: View {
                                 .foregroundColor(.appBrown)
                                 .frame(width: 120, height: 40, alignment: .leading)
                             
+                            
                             Text(timeString(from: timeRemaining))
                                 .foregroundColor(.appBrown)
                                 .frame(width: 120, height: 40, alignment: .trailing)
@@ -103,10 +103,7 @@ struct NewTimeView: View {
                                                 }
                                                 .popover(isPresented: $showTimeOptions) {
                                                     menuContent
-                                                        .background(Color.appBrown)
-                                                        
                                                 }
-
                         }
                         
                         HStack {
@@ -167,12 +164,14 @@ struct NewTimeView: View {
                     showTimeOptions = false
                 }) {
                     Text("\(option) minutos")
-                        .foregroundColor(.appBrown)
+                        .foregroundColor(.black)
                 }
+                
+                
             }
         }
         .frame(width: 120, height: 100)
-        .background(Color.purple)
+        .background(Color.appBrown)
     }
 
     func startTimer() {
