@@ -9,37 +9,27 @@ import SwiftUI
 
 struct TabBarView: View {
     @State var currentTab = "My tasks"
-    @State private var isTasksViewVisible = false
-    @State private var isHistoryViewVisible = false
-    
+    @State private var isTasksViewVisible = true
     
     var body: some View {
-        VStack{
+        VStack(alignment: .leading){
             HStack{
-                TabButtonView(image: "checklist", title: "My tasks", currentTab: $currentTab, action: {
+                TabButtonView(image: "checklist", title: "Atividades", currentTab: $currentTab, action: {
                     isTasksViewVisible = true
-                    isHistoryViewVisible = false
                 })
                 
-                TabButtonView(image: "clock.fill", title: "History", currentTab: $currentTab, action: {
+                TabButtonView(image: "clock.fill", title: "Histórico", currentTab: $currentTab, action: {
                     isTasksViewVisible = false
-                    isHistoryViewVisible = true
                 })
             }
             .padding(.horizontal)
             .padding(.top)
-            
-            Spacer(minLength: 20)
-            
             if isTasksViewVisible {
                 TaskView()
-            } else if isHistoryViewVisible {
+            } else {
                 HistoryView()
-                
             }
-            
         }
-        .padding(.all)
         
     }
 }
